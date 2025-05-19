@@ -102,7 +102,6 @@ class InformasiController extends Controller
             $informasi->judul = $request->judul;
             $informasi->deskripsi = $request->deskripsi;       
             if ($request->hasFile('foto')) {
-                $informasi->deleteImage();
                 $img= $request->file('foto');
                 $name= rand(1000,9999). $img->getClientOriginalName();
                 $img->move('storage/gambar/', $name);

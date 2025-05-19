@@ -86,7 +86,7 @@ class FasilitasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $fasilitas = new Fasilitas();
+        $fasilitas = Fasilitas::findOrFail($id);
         $fasilitas->nama_fasilitas = $request->nama_fasilitas;
         if ($request->hasFile('foto')) {
 

@@ -1,12 +1,16 @@
 <?php
 
 use App\Http\Controllers\InformasiController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\EskulController;
 use App\Http\Controllers\FasilitasController;
+use App\Http\Controllers\PrestasiController;
 use App\Models\Fasilitas;
 use Illuminate\Support\Facades\Route;
 use App\Models\Informasi;
+
+Auth::routes(['register'=> false]);
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +23,7 @@ use App\Models\Informasi;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FrontController::class, 'index']);
 
 Auth::routes();
 
@@ -31,3 +33,4 @@ Route::resource('informasi',InformasiController::class);
 Route::resource('karyawan',KaryawanController::class);
 Route::resource('eskul',EskulController::class);
 Route::resource('fasilitas',FasilitasController::class);
+Route::resource('prestasi',PrestasiController::class);
