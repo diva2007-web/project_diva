@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EL ATMINNN</title>
-  <link rel="shortcut icon" type="image/png" href="{{ asset('admin/images/logos/d.png') }}" />
+  <link rel="shortcut icon" type="image/png" class="w-18 h-5" href="{{ asset('admin/images/logos/d.png') }}" />
   <link rel="stylesheet" href="{{ asset('admin/css/styles.min.css') }}" />
 </head>
 
