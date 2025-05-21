@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use App\Models\Karyawan;
 use App\Models\Informasi;
+use App\Models\eskul;
+use App\Models\fasilitas;
+
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -11,6 +14,8 @@ class FrontController extends Controller
     {
         $karyawan = Karyawan::all();
         $informasi = Informasi::all();
-        return view('welcome', compact('karyawan','informasi'));
+        $eskul = eskul::all();
+        $fasilitas = fasilitas::all();
+        return view('welcome', compact('karyawan','informasi','eskul','fasilitas'));
     }
 }

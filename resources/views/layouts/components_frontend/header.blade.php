@@ -13,8 +13,8 @@
           <ul>
             <li><a href="#hero" class="active">Home<br></a></li>
             <li><a href="#about">Informasi</a></li>
-            <li><a href="#services">Fasilitas</a></li>
-            <li><a href="#departments">Ekskul</a></li>
+            <li><a href="#fasilitas">Fasilitas</a></li>
+            <li><a href="#services">Ekskul</a></li>
             <li><a href="#doctors">Karyawan</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
