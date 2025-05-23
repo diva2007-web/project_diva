@@ -1,100 +1,162 @@
+<!-- /*
+* Template Name: Property
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
 
-  <title>MTS NURUL-HUDA</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Favicons -->
-  <link href="{{ asset('asset/user/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link rel="stylesheet" href="{{asset('asset/user/fonts/icomoon/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('asset/user/fonts/flaticon/font/flaticon.css')}}" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Poppins:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('asset/user/css/tiny-slider.css')}}" />
+    <link rel="stylesheet" href="{{asset('asset/user/css/aos.css')}}" />
+    <link rel="stylesheet" href="{{asset('asset/user/css/style.css')}}" />
+    @yield('style')
+    <title>
+      Property &mdash; Free Bootstrap 5 Website Template by Untree.co
+    </title>
+  </head>
+  <body>
+    @include('layouts.components_frontend.header')
 
-  <!-- Vendor CSS Files -->
-  <link href="{{ asset('asset/user/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('asset/user/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ asset('asset/user/vendor/aos/aos.css') }}" rel="stylesheet">
-  <link href="{{ asset('asset/user/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('asset/user/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('asset/user/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="{{ asset('asset/user/css/main.css') }}" rel="stylesheet">
-
-  @yield('style')
-
-  <!-- =======================================================
-  * Template Name: Medilab
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  @include('layouts.components_frontend.header')
-
-  <main class="main">
     @yield('content')
-  </main>
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li>
+                  <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Creative</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
 
-  <!-- Footer -->
-  <footer id="footer" class="footer light-background">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <!-- You can add about content here -->
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
         </div>
+        <!-- /.row -->
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Pilih halaman</h4>
-          <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">Informasi</a></li>
-            <li><a href="#fasilitas">Fasilitas</a></li>
-            <li><a href="#services">Eskul</a></li>
-            <li><a href="#doctors">Karyawan</a></li>
-          </ul>
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by
+              <a href="https://untree.co">Untree.co</a>
+              <!-- License information: https://untree.co/license/ -->
+            </p>
+            <div>
+              Distributed by
+              <a href="https://themewagon.com/" target="_blank">themewagon</a>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
       </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <div class="credits">
-        Designed by <a href="">mah gubluk</a> |
-        Distributed by <a href="">Diva</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="{{ asset('asset/user/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('asset/user/assets/vendor/php-email-form/validate.js') }}"></script>
-  <script src="{{ asset('asset/user/vendor/aos/aos.js') }}"></script>
-  <script src="{{ asset('asset/user/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-  <script src="{{ asset('asset/user/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-  <script src="{{ asset('asset/user/vendor/swiper/swiper-bundle.min.js') }}"></script>
-
-  <!-- Main JS File -->
-  <script src="{{ asset('asset/user/js/main.js') }}"></script>
-  @stack('scripts')
-
-</body>
+    @stack('scripts')
+    <script src="{{asset('asset/user/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('asset/user/js/tiny-slider.js')}}"></script>
+    <script src="{{asset('asset/user/js/aos.js')}}"></script>
+    <script src="{{asset('asset/user/js/navbar.js')}}"></script>
+    <script src="{{asset('asset/user/js/counter.js')}}"></script>
+    <script src="{{asset('asset/user/js/custom.js')}}"></script>
+  </body>
 </html>

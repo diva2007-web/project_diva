@@ -24,6 +24,9 @@ Auth::routes(['register'=> false]);
 */
 
 Route::get('/', [FrontController::class, 'index']);
+Route::get('/about', [FrontController::class, 'about']);
+Route::get('/prestasi1', [FrontController::class, 'prestasis']);
+
 
 Auth::routes();
 
